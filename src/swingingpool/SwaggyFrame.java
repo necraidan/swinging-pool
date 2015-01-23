@@ -1,6 +1,7 @@
 package swingingpool;
 
 import java.awt.Color;
+import java.net.URL;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBoxMenuItem;
@@ -70,7 +71,9 @@ public class SwaggyFrame extends JFrame{
 	private void buildTabbedPane() {
 		this.getContentPane().add(pan);
 		this.pan.add("Jingles",panJinglePodcast);
-		this.panJinglePodcast.add(new JButton("test"));
+		URL url = SwaggyFrame.class.getResource("res/batterdie.mp3");
+		this.panJinglePodcast.add(new JButton(""+url));
+		//System.out.println(url.getPath());
 	}
 
 }
