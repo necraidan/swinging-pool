@@ -58,7 +58,7 @@ public class SwaggyFrame extends JFrame{
 	    this.setLocationRelativeTo(null);               
      
 	    build();
-
+	    
 	    this.setContentPane(pan);               
 	    this.setVisible(true);
 	}
@@ -67,6 +67,7 @@ public class SwaggyFrame extends JFrame{
 	private void build(){
 	    buildMenuBar();
 	    buildTabbedPane();
+	    this.pack();
 	}
 	
 
@@ -183,8 +184,5 @@ public class SwaggyFrame extends JFrame{
 
         SwingUtilities.updateComponentTreeUI(this);
         this.pack();
-
     }
-
-	
 }
